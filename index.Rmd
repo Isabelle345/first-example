@@ -1,0 +1,106 @@
+---
+title: "Reproducibility Research in R"
+author: Isabelle Grootes
+date: 18 February 2020
+
+output: 
+  html_document:
+    toc: true # table of contents
+    toc_depth: 2 # Limited to the header subsection 
+    toc_float: true  # Create table of contents on the side
+---
+
+# Introduction {#introduction}
+  This is an introduction to reproducibility in R. 
+
+## Starting with RStudio
+  Information about RStudio
+  
+### Opening RStudio 
+  Show the different panes
+
+You can add **bold text** or __bold text with underscores__
+You can also use *italics text* or with _single underscores_
+Adding superscript ^is_also_easy^ 
+
+Adding subscript using ~tilde~
+
+if oyu add inline code using backtick  `to write code`.
+
+Use strikethrough text ~~double~~ tilde.
+
+If you're writing a lot of text \
+then you might want to break it up. 
+
+We have cobered this in the [Introduction section](#introduction)
+
+You can also create [links to for example google](https://www.google.com)
+
+But you might have some link to the footnote[^1].
+
+[^1]: This is my first footnote.
+
+## Lists
+Ordered list take numbers
+
+1. Item a 
+2. Item b
+3. Item c 
+    a. Sublist 1
+    b. Sublist 2
+    
+You can also have unorder lists: 
+
+- Item A
+- Item B
+
+* Item C
+* Item D
+
+- [ ] : Uncompleted task
+- [x] : Completed task
+
+
+![A puppy](https://cdn11.bigcommerce.com/s-n9iiwdfeah/images/stencil/1280x1280/products/929/2597/AC0660_PK_Golden-Retriever-Welpe-mit-Blume_FTL_111x154_1280px__23262.1542747635.jpg?c=2&imbypass=on.jpg)
+
+## Tables 
+
+You can create tables using | - 
+
+| Column header | Another column |
+| ------------  | -------------- |
+| First row     |  With info     |
+| More rows     | With more info |
+
+> A greater- than sign creates blocks
+
+How does that look?
+
+How would we highlight code?
+
+Single `backticks` are used in line. 
+
+```
+print('hello')
+read.csv('data.txt')
+```
+Ctrl + Alt + i => inserts R-code chunks 
+```{r}
+75*8
+```
+
+```{r}
+Calculation_output <- 100*2
+Calculation_output
+```
+```{r}
+Calculation_output*5
+```
+
+```{r}
+download.file(url="https://raw.githubusercontent.com/cambiotraining/reproducibility-training/master/data/gapminder_data.csv", destfile="data/gapminder_data.csv")
+```
+
+
+
+
